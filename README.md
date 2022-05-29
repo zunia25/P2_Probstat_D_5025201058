@@ -30,3 +30,13 @@ sd(data$x-data$y)
 Hasil dari program di atas.
   
   ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/1a.png)
+
+- Carilah nilai t (p-value).
+
+```R
+#1b Carilah nilai t (p-value)
+t.test(x, y, alternative = "greater", var.equal = FALSE)
+```
+
+Hasil dari program di atas.
+  ![alt text]()
