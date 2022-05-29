@@ -54,4 +54,4 @@ t.test(x,y, mu = 0, alternative = "two.sided", var.equal = TRUE)
 ```
 
 Hasil dari program di atas.
-  ![alt text]()
+  ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/1c.png)
