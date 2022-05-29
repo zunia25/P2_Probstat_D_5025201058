@@ -87,4 +87,7 @@ tsum.test(
 
 Hasil dari program di atas.
 
-  ![alt text]()
+  ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/2b.png)
+  
+ -  Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
+
