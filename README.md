@@ -2,11 +2,18 @@
 Praktikum Modul 2 Probabilitas dan Statistika
 
 ## Soal 1
-    Seorang peneliti melakukan penelitian mengenai pengaruh aktivitas 𝐴 terhadap kadar saturasi oksigen pada manusia. Peneliti tersebut mengambil sampel sebanyak 9 responden. Pertama, sebelum melakukan aktivitas 𝐴, peneliti mencatat kadar saturasi oksigen dari 9 responden tersebut. Kemudian, 9 responden tersebut diminta melakukan aktivitas 𝐴. Setelah 15 menit, peneliti tersebut mencatat kembali kadar saturasi oksigen dari 9 responden tersebut. Berikut data dari 9 responden mengenai kadar saturasi oksigen sebelum dan sesudah melakukan aktivitas 𝐴.
+  Seorang peneliti melakukan penelitian mengenai pengaruh aktivitas 𝐴 terhadap
+kadar saturasi oksigen pada manusia. Peneliti tersebut mengambil sampel
+sebanyak 9 responden. Pertama, sebelum melakukan aktivitas 𝐴, peneliti mencatat
+kadar saturasi oksigen dari 9 responden tersebut. Kemudian, 9 responden tersebut
+diminta melakukan aktivitas 𝐴. Setelah 15 menit, peneliti tersebut mencatat kembali
+kadar saturasi oksigen dari 9 responden tersebut. Berikut data dari 9 responden
+mengenai kadar saturasi oksigen sebelum dan sesudah melakukan aktivitas 𝐴.   
 
 ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/Tabel.png)
 
-Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari responden ke-3 ketika belum melakukan aktivitas 𝐴 sebanyak 67, dan setelah melakukan aktivitas 𝐴 sebanyak 70.
+Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari responden ke-3 ketika belum melakukan aktivitas 𝐴 sebanyak 67,
+dan setelah melakukan aktivitas 𝐴 sebanyak 70.
 
 - Carilah Standar Deviasi dari data selisih pasangan pengamatan tabel diatas
 
@@ -21,4 +28,4 @@ data = data.frame(x,y)
 sd(data$x-data$y)
 ```
   Hasil dari program di atas.
-  ![alt text]()
+  ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/1a.png)
