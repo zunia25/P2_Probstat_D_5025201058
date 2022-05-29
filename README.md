@@ -195,31 +195,4 @@ group3 <- subset(myFile, V1=="Kucing Putih")
 mengambil data dari link yang telah disediadakan kemudian membuat myFile menjadi group Setelah itu, 
 dicek apakah dia menyimpan nilai di groupnya Lalu bagi tiap valuer menjadi 3 bagian ke 3 grup.
 
-- carilah atau periksalah Homogeneity of variances nya , Berapa nilai p yang
-didapatkan? , Apa hipotesis dan kesimpulan yang dapat diambil 
-
-```
-bartlett.test(Length~Group, data=dataoneway)
-```
-
-- Untuk uji ANOVA (satu arah), buatlah model linier dengan Panjang versus
-Grup dan beri nama model tersebut model 1.
-
-```
-qqnorm(group1$Length)
-qqline(group1$Length)
-```
-
-  ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/4c.png)  
-- Dari Hasil Poin C, Berapakah nilai-p ? , Apa yang dapat Anda simpulkan
-dari H0?
-- Verifikasilah jawaban model 1 dengan Post-hoc test Tukey HSD, dari nilai p
-yang didapatkan apakah satu jenis kucing lebih panjang dari yang lain?
-
-```R
-library(ggplot2)
-ggplot(dataoneway, aes(x = Group, y = Length)) + geom_boxplot(fill = "grey80", colour = "black") + 
-  scale_x_discrete() + xlab("Treatment Group") +  ylab("Length (cm)")
-```
-
 
