@@ -57,3 +57,34 @@ t.test(x,y, mu = 0, alternative = "two.sided", var.equal = TRUE)
 Hasil dari program di atas.
 
   ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/1c.png)
+  
+ ## Soal 2
+ Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun.
+Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak diminta untuk
+mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata
+23.500 kilometer dan standar deviasi 3900 kilometer. (Kerjakan menggunakan
+library seperti referensi pada modul)
+
+- Apakah Anda setuju dengan klaim tersebut?
+```R 
+#2a
+Setuju
+```
+- Jelaskan maksud dari output yang dihasilkan!
+
+```R
+#2b 
+install.packages("BSDA")
+library(BSDA)
+
+
+tsum.test(
+  mean.x = 23500, 
+  s.x = sd(3900), 
+  n.x = 100
+)
+```
+
+Hasil dari program di atas.
+
+  ![alt text]()
