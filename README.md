@@ -107,3 +107,57 @@ permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya
 didapatkanlah data berikut dari perusahaan saham tersebut.
 
   ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/tabel2.png)
+ 
+ Dari data diatas berilah keputusan serta kesimpulan yang didapatkan dari hasil
+diatas. Asumsikan nilai variancenya sama, apakah ada perbedaan pada
+rata-ratanya (α= 0.05)? Buatlah :
+-  H0 dan H1
+H0 dan H1 dilakukan perhitungan H0 sebagai berikut
+
+  ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/3a1.png)
+  
+dilakukan perhitungan H1 sebagai berikut
+   
+   ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/3a2.png)
+   
+-  Hitung Sampel Statistik
+
+```R
+# soal 3b 
+# Hitung Sampel Statistik
+tsum.test(mean.x=3.64, s.x = 1.67, n.x = 19, 
+          mean.y =2.79 , s.y = 1.32, n.y = 27, 
+          alternative = "greater", var.equal = TRUE)
+```
+Hasil dari program diatas.
+  
+  ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/3b.png)
+  
+-  Lakukan Uji Statistik (df =2)
+
+```R
+# soal 3c
+# Lakukan Uji Statistik (df =2)
+install.packages("mosaic")
+library(mosaic)
+
+plotDist(dist='t', df=2, col="blue")
+```
+
+Hasil dari program di atas.
+
+  ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/3c.png)
+
+-  Nilai Kritikal
+```R
+# soal 3d
+# Nilai Kritikal
+qchisq(p = 0.05, df = 2, lower.tail=FALSE)
+```
+
+Hasil dari program di atas.
+
+  ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/3d.png)  
+  
+- Keputusan
+- Kesimpulan
