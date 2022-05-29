@@ -160,4 +160,66 @@ Hasil dari program di atas.
   ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/3d.png)  
   
 - Keputusan
+Teori keputusan adalah teori formal pengambilan keputusan di bawah ketidakpastian. Aksinya adalah : `({a}_{a∈A})` Kemungkinan konsekuensi : `({c}_{c∈C})` (tergantung pada keadaan dan tindakan) Maka keputusan dapat dibuat dengan `t.test`
+
 - Kesimpulan
+Kesimpulan Kesimpulan yang didapatkan yaitu perbedaan rata-rata yang terjadi tidak ada jika dilihat dari uji statistik dan akan ada tetapi tidak signifikan jika dipengaruhi nilai kritikal.
+
+## Soal 4
+Seorang Peneliti sedang meneliti spesies dari kucing di ITS . Dalam penelitiannya
+ia mengumpulkan data tiga spesies kucing yaitu kucing oren, kucing hitam dan
+kucing putih dengan panjangnya masing-masing.
+Jika : diketahui dataset https://intip.in/datasetprobstat1
+H0 : Tidak ada perbedaan panjang antara ketiga spesies atau rata-rata panjangnya
+sama Maka Kerjakan atau Carilah:
+
+- Buatlah masing masing jenis spesies menjadi 3 subjek "Grup" (grup 1,grup
+2,grup 3). Lalu Gambarkan plot kuantil normal untuk setiap kelompok dan
+lihat apakah ada outlier utama dalam homogenitas varians.
+
+```
+myFile  <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt"))
+dim(myFile)
+head(myFile)
+attach(myFile)
+
+myFile$V1 <- as.factor(myFile$V1)
+myFile$V1 = factor(myFile$V1,labels = c("Kucing Oren","Kucing Hitam","Kucing Putih","Kucing Oren"))
+
+class(myFile$V1)
+
+group1 <- subset(myFile, V1=="Kucing Oren")
+group2 <- subset(myFile, V1=="Kucing Hitam")
+group3 <- subset(myFile, V1=="Kucing Putih")
+```
+mengambil data dari link yang telah disediadakan kemudian membuat myFile menjadi group Setelah itu, 
+dicek apakah dia menyimpan nilai di groupnya Lalu bagi tiap valuer menjadi 3 bagian ke 3 grup.
+
+- carilah atau periksalah Homogeneity of variances nya , Berapa nilai p yang
+didapatkan? , Apa hipotesis dan kesimpulan yang dapat diambil 
+
+```
+bartlett.test(Length~Group, data=dataoneway)
+```
+
+- Untuk uji ANOVA (satu arah), buatlah model linier dengan Panjang versus
+Grup dan beri nama model tersebut model 1.
+
+```
+qqnorm(group1$Length)
+qqline(group1$Length)
+```
+
+  ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/4c.png)  
+- Dari Hasil Poin C, Berapakah nilai-p ? , Apa yang dapat Anda simpulkan
+dari H0?
+- Verifikasilah jawaban model 1 dengan Post-hoc test Tukey HSD, dari nilai p
+yang didapatkan apakah satu jenis kucing lebih panjang dari yang lain?
+
+```R
+library(ggplot2)
+ggplot(dataoneway, aes(x = Group, y = Length)) + geom_boxplot(fill = "grey80", colour = "black") + 
+  scale_x_discrete() + xlab("Treatment Group") +  ylab("Length (cm)")
+```
+
+
