@@ -39,9 +39,10 @@ t.test(x, y, alternative = "greater", var.equal = FALSE)
 ```
 
 Hasil dari program di atas.
+
   ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/1b.png)
   
- - tentukanlah apakah terdapat pengaruh yang signifikan secara statistika
+- Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika
 dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan
 aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada
 pengaruh yang signifikan secara statistika dalam hal kadar saturasi
@@ -54,4 +55,5 @@ t.test(x,y, mu = 0, alternative = "two.sided", var.equal = TRUE)
 ```
 
 Hasil dari program di atas.
+
   ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/1c.png)
