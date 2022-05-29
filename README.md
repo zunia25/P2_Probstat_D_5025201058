@@ -27,7 +27,7 @@ dan setelah melakukan aktivitas 𝐴 sebanyak 70.
 data = data.frame(x,y)
 sd(data$x-data$y)
 ```
-Hasil dari program di atas menggunakan #data.frame
+Hasil dari program di atas menggunakan `data.frame`
   
   ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/1a.png)
 
@@ -88,6 +88,15 @@ tsum.test(
 Hasil dari program di atas.
 
   ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/2b.png)
+  
+Diketahui n = 100, Rata-Rata (X̄) = 23500, dan standar deviasi(σ) = 3900 Maka null hipotesis adalah
+```
+H0 : μ = 20000
+```
+Alternatif hipotesisnya yaitu
+```
+H1 : μ > 20000
+```
   
  -  Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
 
