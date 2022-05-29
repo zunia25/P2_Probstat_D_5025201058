@@ -99,4 +99,11 @@ H1 : μ > 20000
 ```
   
  -  Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
+`kesimpulan dari soal diatas adalah mobil yang digunakan rata ratanya lebih dari 20.000 km/tahun`
 
+## Soal 3
+  Diketahui perusahaan memiliki seorang data analyst ingin memecahkan
+permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya
+didapatkanlah data berikut dari perusahaan saham tersebut.
+
+  ![alt text](https://github.com/zunia25/P2_Probstat_D_5025201058/blob/main/File_Praktikum2_Probstat/tabel2.png)
